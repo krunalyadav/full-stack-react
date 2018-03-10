@@ -1,0 +1,45 @@
+{
+  "name": "full-stack-react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "lint": "eslint --cache --ext .js --ext .jsx .",
+    "dev": "pm2 start lib/server.js --watch --interpreter babel-node.cmd"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krunalyadav/full-stack-react.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/krunalyadav/full-stack-react/issues"
+  },
+  "homepage": "https://github.com/krunalyadav/full-stack-react#readme",
+  "devDependencies": {
+    "babel-eslint": "^8.2.2",
+    "eslint": "^4.18.2",
+    "eslint-plugin-react": "^7.7.0"
+  },
+  "babel": {
+    "presets": [
+      "react",
+      "env",
+      "stage-2"
+    ]
+  },
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "pm2": "^2.10.1"
+  }
+}
