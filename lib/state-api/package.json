@@ -1,0 +1,22 @@
+{
+  "name": "state-api",
+  "version": "1.0.0",
+  "description": "State API",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jscomplete/state-api.git"
+  },
+  "author": "Krunal Yadav",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jscomplete/state-api/issues"
+  },
+  "homepage": "https://github.com/jscomplete/state-api#readme"
+}
