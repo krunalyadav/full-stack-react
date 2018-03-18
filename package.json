@@ -11,7 +11,8 @@
     "dev": "set NODE_PATH=./lib&& nodemon --exec babel-node lib/server.js",
     "webpack": "webpack -wd",
     "test": "jest --watch",
-    "verify-tests": "jest --coverage"
+    "verify-tests": "jest --coverage",
+    "build-webpack": "webpack -p"
   },
   "repository": {
     "type": "git",
