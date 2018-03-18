@@ -12,7 +12,8 @@
     "webpack": "webpack -wd",
     "test": "jest --watch",
     "verify-tests": "jest --coverage",
-    "build-webpack": "webpack -p"
+    "build-webpack": "webpack -p",
+    "build-node": "babel lib -d build --copy-files"
   },
   "repository": {
     "type": "git",
@@ -36,7 +37,18 @@
     "webpack-cli": "^2.0.12"
   },
   "babel": {
-    "presets": ["react", "env", "stage-2"]
+    "presets": [
+      "react",
+      [
+        "env",
+        {
+          "targets": {
+            "node": "current"
+          }
+        }
+      ]
+    ],
+    "plugins": ["transform-class-properties", "transform-object-rest-spread"]
   },
   "dependencies": {
     "axios": "^0.18.0",
